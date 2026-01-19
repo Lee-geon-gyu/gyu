@@ -1,0 +1,231 @@
+/* Add on Font ------------------------------------------------------------ */
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Medium.woff2")
+    format("woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-SemiBold.woff2")
+    format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-ExtraBold.woff2")
+    format("woff2");
+  font-weight: 800;
+  font-display: swap;
+}
+/* Normalize ------------------------------------------------------------ */
+body,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  cursor: default;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+/* Styler ------------------------------------------------------------ */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: max(6px, 0.52083333vw);
+}
+
+html body {
+  font-family: "Pretendard", sans-serif;
+  max-width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  min-width: 1150px;
+}
+
+header,
+main,
+footer {
+  width: 100%;
+}
+
+span,
+img {
+  display: block;
+}
+
+span {
+  cursor: default;
+}
+/* Variable ------------------------------------------------------------ */
+:root {
+  --margin-grid-system: 0 10rem;
+  --padding-grid-syetem: 10rem;
+  --maxWidth-grid-system: 172rem;
+  --minWidth-block-system: 344px;
+  --minHeight--block-system: 100dvh;
+  --primary-color: rgba(46, 102, 246, 1);
+  --main-color-yellow: rgba(255, 174, 0, 1);
+  --color-white: #fff;
+}
+/* header ------------------------------------------------------------ */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 7rem;
+  padding: var(--margin-grid-system);
+  box-sizing: border-box;
+  font-family: "Pretendard";
+  background-color: rgba(240, 240, 240, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+header > .hd-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--primary-color);
+}
+
+header > .hd-container > .left-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+header > .hd-container > .left-box > .portfolio-text {
+  font-weight: 800;
+  font-size: 2.4rem;
+  transition: transform 0.3s ease;
+}
+
+header > .hd-container > .left-box > .portfolio-text:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+header > .hd-container > .right-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+header > .hd-container > .right-box > .short-btn-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8rem;
+}
+
+header > .hd-container > .right-box > .short-btn-wrapper > .short-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+header
+  > .hd-container
+  > .right-box
+  > .short-btn-wrapper
+  > .short-btn
+  > .left-box {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+}
+
+header
+  > .hd-container
+  > .right-box
+  > .short-btn-wrapper
+  > .short-btn
+  > .right-box {
+  font-weight: 600;
+  font-size: 1.6rem;
+  transition: transform 0.3s ease;
+}
+
+header
+  > .hd-container
+  > .right-box
+  > .short-btn-wrapper
+  > .short-btn
+  > .right-box:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+/* main asdddddddddddddddddddddddddddddd */
+.sec-cover {
+  width: 100%;
+  height: 98dvh;
+  position: relative;
+}
+
+.bg-line-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+.bg-line-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.draw-line {
+  fill: none;
+  stroke: #094eff;
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
